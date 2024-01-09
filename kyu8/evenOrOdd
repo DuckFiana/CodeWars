@@ -1,0 +1,24 @@
+// Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+___________________________________________________________________________________________________________________________
+public class EvenOrOdd {
+    public static String evenOrOdd(int number) {
+        if (number % 2 == 0) {
+            return "Even";
+        } else {
+            return "Odd";
+
+        }
+    }
+}
+_____________________________________________________________________________________________________________________________
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int userInput = scanner.nextInt();
+        String result = EvenOrOdd.evenOrOdd(userInput);
+        System.out.println(result);
+    }
+}
